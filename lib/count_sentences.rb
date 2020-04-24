@@ -15,6 +15,7 @@ class String
   end
 
   def count_sentences
+    binding.pry
     sentence = split(/[.?!]/)
     sentence.delete_if{|empty| empty.empty?}
     sentence.length
